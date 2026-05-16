@@ -176,17 +176,19 @@ export function MobileApp() {
                                     </div>
                                 </a>
                                 
-                                <a 
-                                    href="#" 
+                                <a
+                                    href="https://drive.google.com/file/d/1-ANLvra4QAmS93r5z6m8gc4vy50bLGT_/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="group flex-1 bg-forest-green text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green/90 transition-all duration-300"
-                                    aria-label="Get it on Google Play"
+                                    aria-label="Descargar APK para Android"
                                 >
                                     <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
                                         <Play className="text-white" size={20} />
                                     </div>
                                     <div>
-                                        <div className="text-xs opacity-80">{t('mobileApp.store.playTop')}</div>
-                                        <div className="font-semibold">{t('mobileApp.store.playName')}</div>
+                                        <div className="text-xs opacity-80">Descargar para</div>
+                                        <div className="font-semibold">Android (APK)</div>
                                     </div>
                                 </a>
                             </div>

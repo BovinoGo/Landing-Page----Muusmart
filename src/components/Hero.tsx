@@ -60,9 +60,9 @@ export function Hero() {
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="flex flex-col items-center justify-center gap-3 sm:flex-row"
                     >
-                        <button 
-                            className='group inline-flex items-center justify-between gap-6 border-b border-lime-neon/60 bg-transparent px-0 py-3 text-sm font-semibold uppercase tracking-[0.26em] text-lime-neon transition-all duration-300 hover:translate-x-1 md:text-base' 
-                            onClick={handleScroll('fair')}
+                        <button
+                            className='group inline-flex items-center justify-between gap-6 border-b border-lime-neon/60 bg-transparent px-0 py-3 text-sm font-semibold uppercase tracking-[0.26em] text-lime-neon transition-all duration-300 hover:translate-x-1 md:text-base'
+                            onClick={() => window.open('https://marketplacemuusmart.netlify.app/', '_blank')}
                         >
                             <span>{t('hero.primary')}</span>
                             <ArrowRight className="transition-transform group-hover:translate-x-1" size={18} />

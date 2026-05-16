@@ -81,7 +81,9 @@ export function FairSection() {
 
                     <div className="flex flex-wrap gap-3 pt-2">
                         <a
-                            href="#app"
+                            href="https://marketplacemuusmart.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 border-b border-lime-neon/60 px-0 py-2 text-sm font-semibold uppercase tracking-[0.26em] text-lime-neon transition-all duration-300 hover:translate-x-1"
                         >
                             {t("fair.primaryCta")}
