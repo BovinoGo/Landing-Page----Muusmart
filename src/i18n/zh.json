@@ -9,7 +9,7 @@
     "hero": {
         "kicker": "高端牛只交易市场",
         "title": "发现牛只，<br />展示你的市集，<br />并更快成交",
-        "subtitle": "Vacapp 将牛只搜索变成高端数字体验，帮助买家和卖家以更少阻力、更高信任连接起来。",
+        "subtitle": "Muusmart 将牛只搜索变成高端数字体验，帮助买家和卖家以更少阻力、更高信任连接起来。",
         "primary": "探索市集",
         "secondary": "了解流程",
         "metrics": {
@@ -64,8 +64,8 @@
         }
     },
     "aboutus": {
-        "title": "关于 Vacapp",
-        "description": "Vacapp 是为秘鲁的牛只生产者、买家和兽医打造的现代平台。我们的使命是让发现和管理牛只变得轻松，即使是追求简洁直观流程的团队也能快速上手。",
+        "title": "关于 Muusmart",
+        "description": "Muusmart 是为秘鲁的牛只生产者、买家和兽医打造的现代平台。我们的使命是让发现和管理牛只变得轻松，即使是追求简洁直观流程的团队也能快速上手。",
         "subtitle": "我们将传统畜牧业与更强的数字化市集连接起来。",
         "imageAlt": "使用 Vacapp 的牧场主",
         "badge": "为市集而生",
@@ -79,7 +79,7 @@
         },
         "values": {
             "title": "我们的价值观",
-            "subtitle": "引导 Vacapp 每个决策的原则",
+            "subtitle": "引导 Muusmart 每个决策的原则",
             "sustainability": {
                 "title": "可持续性",
                 "description": "尊重环境并推动负责任的牧业实践的技术。"
@@ -104,7 +104,7 @@
         "subtitle": "专为现代牲畜管理设计的专业工具",
         "cta": {
             "title": "优化您的牲畜生产",
-            "description": "加入数百位已经用 Vacapp 改变工作流的生产者。减少阻力，提升牛只可见性，并提高生产力。",
+            "description": "加入数百位已经用 Muusmart 改变工作流的生产者。减少阻力，提升牛只可见性，并提高生产力。",
             "buttons": {
                 "trial": "开始免费试用",
                 "demo": "观看实时演示"
@@ -207,7 +207,7 @@
     },
     "mobileApp": {
         "title": "立即下载我们的应用",
-        "description": "在 Android 和 iOS 设备上体验 Vacapp 的全部功能。",
+        "description": "在 Android 和 iOS 设备上体验 Muusmart 的全部功能。",
         "cards": {
             "offline": { "title": "离线访问", "desc": "无网络也可使用，联网后自动同步" },
             "fast": { "title": "快速高效", "desc": "为日常田间使用优化的界面" },
@@ -233,7 +233,7 @@
     },
     "testimonials": {
         "title": "用户评价",
-        "subtitle": "已有 500 多位生产者信任 Vacapp 管理他们的运营",
+        "subtitle": "已有 500 多位生产者信任 Muusmart 管理他们的运营",
         "stats": {
             "farms": "活跃农场",
             "avgRating": "平均评分",
@@ -244,23 +244,23 @@
             {
                 "name": "卡洛斯·门多萨",
                 "role": "牧场主 - 库斯科",
-                "text": "Vacapp 彻底改变了我展示牛只和管理市集列表的方式。现在我用手机就能掌控一切，并更快达成交易。"
+                "text": "Muusmart 彻底改变了我展示牛只和管理市集列表的方式。现在我用手机就能掌控一切，并更快达成交易。"
             },
             {
                 "name": "玛丽亚·托雷斯",
                 "role": "兽医 - 阿雷基帕",
-                "text": "作为兽医，Vacapp 帮助我更好地跟踪正确的动物，并在拜访前核对信息。流畅体验是很大的升级。"
+                "text": "作为兽医，Muusmart 帮助我更好地跟踪正确的动物，并在拜访前核对信息。流畅体验是很大的升级。"
             },
             {
                 "name": "罗伯托·席尔瓦", 
                 "role": "畜牧公司 - 利马",
-                "text": "我们用 Vacapp 管理多个市集和牛群。实时同步和发现流程每周帮我们节省大量时间。"
+                "text": "我们用 Muusmart 管理多个市集和牛群。实时同步和发现流程每周帮我们节省大量时间。"
             }
         ]
     },
     "callToAction": {
         "title": "准备好数字化您的市集了吗？",
-        "subtitle": "加入畜牧业革命。立即开始，用 Vacapp 改变您的管理方式。",
+        "subtitle": "加入畜牧业革命。立即开始，用 Muusmart 改变您的管理方式。",
         "benefits": [
             "30天免费试用",
             "无长期承诺",
@@ -281,7 +281,7 @@
         }
     },
     "footer": {
-        "description": "Vacapp 是完整的 SaaS 平台，帮助数字化牛只发现和管理。将市集、牛群、员工和活动统一在一个可从网页和移动端访问的解决方案中。",
+        "description": "Muusmart 是完整的 SaaS 平台，帮助数字化牛只发现和管理。将市集、牛群、员工和活动统一在一个可从网页和移动端访问的解决方案中。",
         "links": {
             "title": "快速链接",
             "about": "关于我们",
@@ -297,11 +297,11 @@
             "terms": "服务条款",
             "support": "技术支持"
         },
-        "copyright": "© Vacapp. 保留所有权利。"
+        "copyright": "© Muusmart. 保留所有权利。"
     },
     "termsModal": {
         "title": "条款和条件",
-        "content": "欢迎使用 Vacapp！通过使用我们的服务，您同意以下条款和条件...",
+        "content": "欢迎使用 Muusmart！通过使用我们的服务，您同意以下条款和条件...",
         "accept": "接受并继续"
     },
     "consent": {
@@ -322,7 +322,7 @@
         },
         "register": {
             "title": "注册",
-                "subtitle": "创建新账户开始使用 Vacapp",
+                "subtitle": "创建新账户开始使用 Muusmart",
             "button": "注册",
             "hasAccount": "已有账户？"
         },

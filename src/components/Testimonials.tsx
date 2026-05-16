@@ -3,6 +3,7 @@ import { Star, Quote } from 'lucide-react';
 import farmer1 from '../assets/farmer1.webp';
 import farmer2 from '../assets/farmer2.webp';
 import farmer3 from '../assets/farmer3.webp';
+import { motion } from 'motion/react';
 
 export function Testimonials() {
     const { t } = useTranslation();
@@ -35,7 +36,15 @@ export function Testimonials() {
                 {/* Testimonials Grid */}
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {testimonials.map((testimonial, index) => (
-                        <TestimonialCard key={index} testimonial={testimonial} />
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 0.5, delay: index * 0.08 }}
+                        >
+                            <TestimonialCard testimonial={testimonial} />
+                        </motion.div>
                     ))}
                 </div>
 
@@ -67,29 +76,60 @@ export function Testimonials() {
 
 function TestimonialCard({ testimonial }: { testimonial: any }) {
     return (
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-forest-green/10 hover:border-lime-neon/50">
+        <motion.div 
+            whileHover={{ y: -8 }}
+            className="relative bg-gradient-to-br from-white to-white/90 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-forest-green/10 hover:border-lime-neon/50 group"
+            role="blockquote"
+            aria-label={`Testimonial from ${testimonial.name}`}
+        >
+            {/* Glow effect on hover */}
+            <motion.div 
+                className="absolute inset-0 bg-gradient-to-br from-lime-neon/5 to-transparent rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            />
             
             {/* Quote Icon */}
-            <div className="flex justify-between items-start mb-6">
-                <Quote className="text-lime-neon" size={32} />
+            <div className="flex justify-between items-start mb-6 relative z-10">
+                <motion.div
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    initial={{ rotate: -15 }}
+                    className="text-lime-neon"
+                >
+                    <Quote size={32} />
+                </motion.div>
                 <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="text-lime-neon fill-current" size={16} />
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: i * 0.05 }}
+                        >
+                            <Star className="text-lime-neon fill-current" size={16} aria-hidden="true" />
+                        </motion.div>
                     ))}
                 </div>
             </div>
 
             {/* Testimonial Text */}
-            <p className="text-forest-green/80 font-mulish mb-6 leading-relaxed">
+            <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="text-forest-green/80 font-mulish mb-6 leading-relaxed relative z-10"
+            >
                 "{testimonial.text}"
-            </p>
+            </motion.p>
 
             {/* User Info */}
-            <div className="flex items-center gap-4">
-                <img 
+            <motion.div 
+                className="flex items-center gap-4 relative z-10 pt-4 border-t border-forest-green/10 group-hover:border-lime-neon/20 transition-colors duration-300"
+                whileHover={{ x: 4 }}
+            >
+                <motion.img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-lime-neon/30"
+                    className="w-12 h-12 rounded-full object-cover border-2 border-lime-neon/30 group-hover:border-lime-neon transition-colors duration-300"
+                    whileHover={{ scale: 1.1 }}
                 />
                 <div>
                     <h4 className="font-bold text-forest-green font-rokkitt">
@@ -99,7 +139,7 @@ function TestimonialCard({ testimonial }: { testimonial: any }) {
                         {testimonial.role}
                     </p>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }

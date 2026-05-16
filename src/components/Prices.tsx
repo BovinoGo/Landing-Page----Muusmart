@@ -31,6 +31,7 @@ export function Prices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, delay: index * 0.05 }}
+              whileHover={{ y: -8 }}
             >
               <PriceCard 
                 plan={plan} 
@@ -51,7 +52,7 @@ export function Prices() {
           <p className="text-forest-green/70 mb-6 font-mulish">
             {t('prices.customDesc')}
           </p>
-          <button onClick={() => { window.location.href = 'https://vacapp.netlify.app/login'; }} className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
+          <button onClick={() => { window.location.href = 'https://muusmart.netlify.app/login'; }} className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
             {t('prices.cta.enterprise')}
             <ArrowRight size={16} />
           </button>
@@ -79,34 +80,46 @@ function PriceCard({
   const isEnterprise = index === 2;
   
   return (
-    <div 
-      className={`relative p-8 rounded-3xl border transition-all duration-300 transform hover:-translate-y-1 ${
+    <motion.div 
+      className={`relative p-8 rounded-3xl border transition-all duration-300 ${
         isPopular 
           ? 'bg-forest-green text-white border-forest-green shadow-2xl' 
-          : 'bg-white text-forest-green border-forest-green/20 hover:border-lime-neon shadow-lg hover:shadow-xl'
+          : 'bg-gradient-to-br from-white to-white/80 text-forest-green border-forest-green/20 hover:border-lime-neon shadow-lg hover:shadow-xl'
       } ${isHovered ? 'shadow-2xl' : ''}`}
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
+      role="article"
+      aria-label={`${plan.name} pricing plan: ${plan.price}`}
     >
       
       {/* Popular Badge */}
       {isPopular && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <div className="bg-lime-neon text-forest-green px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1">
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="absolute -top-4 left-1/2 transform -translate-x-1/2"
+        >
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            className="bg-lime-neon text-forest-green px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1 shadow-lg"
+          >
             <Star size={14} />
             {t('prices.popular')}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
 
       {/* Plan Icon */}
-      <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
-        isPopular ? 'bg-lime-neon' : 'bg-lime-neon/20'
-      }`}>
+      <motion.div 
+        animate={{ scale: isHovered ? 1.1 : 1 }}
+        className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+          isPopular ? 'bg-lime-neon' : 'bg-lime-neon/20'
+        }`}
+      >
         {index === 0 && <Zap className={isPopular ? 'text-forest-green' : 'text-lime-neon'} size={24} />}
         {index === 1 && <Star className="text-forest-green" size={24} />}
         {index === 2 && <Crown className={isPopular ? 'text-forest-green' : 'text-lime-neon'} size={24} />}
-      </div>
+      </motion.div>
 
       {/* Plan Header */}
       <div className="mb-8">
@@ -127,23 +140,35 @@ function PriceCard({
       {/* Features */}
       <ul className="space-y-3 mb-8">
         {plan.features.map((feature, i) => (
-          <li key={i} className="flex items-start gap-3">
-            <Check 
-              size={16} 
-              className={`mt-0.5 flex-shrink-0 ${
-                isPopular ? 'text-lime-neon' : 'text-lime-neon'
-              }`} 
-            />
+          <motion.li 
+            key={i} 
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: i * 0.05 }}
+            className="flex items-start gap-3"
+          >
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+            >
+              <Check 
+                size={16} 
+                className={`mt-0.5 flex-shrink-0 ${
+                  isPopular ? 'text-lime-neon' : 'text-lime-neon'
+                }`} 
+              />
+            </motion.div>
             <span className={`text-sm ${isPopular ? 'text-white/90' : 'text-forest-green/80'}`}>
               {feature}
             </span>
-          </li>
+          </motion.li>
         ))}
       </ul>
 
       {/* CTA Button */}
-      <button 
-        className={`w-full py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
+      <motion.button 
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={`w-full py-3 px-6 rounded-xl font-semibold transition-all duration-300 ${
           isPopular
             ? 'bg-lime-neon text-forest-green hover:bg-white'
             : 'bg-forest-green text-white hover:bg-lime-neon hover:text-forest-green'
@@ -151,27 +176,32 @@ function PriceCard({
         onClick={() => {
           if (index === 2) {
             // Enterprise -> login (contact sales)
-            window.location.href = 'https://vacapp.netlify.app/login';
+            window.location.href = 'https://muusmart.netlify.app/login';
           } else {
             // Starter/Premium -> register
-            window.location.href = 'https://vacapp.netlify.app/register';
+            window.location.href = 'https://muusmart.netlify.app/register';
           }
         }}
+        aria-label={`Choose ${plan.name} plan`}
       >
   {index === 0 ? t('prices.cta.free') : 
    index === 1 ? t('prices.cta.premium') : 
    t('prices.cta.enterprise')}
-      </button>
+      </motion.button>
 
       {/* Enterprise Features */}
       {isEnterprise && (
-        <div className="mt-4 p-3 bg-forest-green/5 rounded-lg border border-forest-green/10">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="mt-4 p-3 bg-forest-green/5 rounded-lg border border-forest-green/10"
+        >
           <p className="text-xs text-forest-green/60 text-center">
             {t('prices.enterpriseNote', { defaultValue: 'Incluye integración personalizada y soporte dedicado' })}
           </p>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 }
 

@@ -45,53 +45,97 @@ export function MobileApp() {
                         
                         {/* App Features */}
                         <div className="grid sm:grid-cols-2 gap-5">
-                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.05 }}
+                                className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-md p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300 hover:shadow-lg"
+                                role="region"
+                                aria-label="Offline access feature"
+                            >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="p-2 bg-lime-neon/20 rounded-lg">
+                                    <motion.div 
+                                        whileHover={{ scale: 1.1 }}
+                                        className="p-2 bg-lime-neon/20 rounded-lg group-hover:bg-lime-neon/30 transition-colors duration-300"
+                                    >
                                         <Download className="text-lime-neon" size={20} />
-                                    </div>
+                                    </motion.div>
                                     <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.offline.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
                                     {t('mobileApp.cards.offline.desc')}
                                 </p>
-                            </div>
+                            </motion.div>
 
-                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.1 }}
+                                className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-md p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300 hover:shadow-lg"
+                                role="region"
+                                aria-label="Fast and efficient feature"
+                            >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="p-2 bg-lime-neon/20 rounded-lg">
+                                    <motion.div 
+                                        whileHover={{ scale: 1.1 }}
+                                        className="p-2 bg-lime-neon/20 rounded-lg group-hover:bg-lime-neon/30 transition-colors duration-300"
+                                    >
                                         <Zap className="text-lime-neon" size={20} />
-                                    </div>
+                                    </motion.div>
                                     <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.fast.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
                                     {t('mobileApp.cards.fast.desc')}
                                 </p>
-                            </div>
+                            </motion.div>
 
-                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.15 }}
+                                className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-md p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300 hover:shadow-lg"
+                                role="region"
+                                aria-label="Secure data feature"
+                            >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="p-2 bg-lime-neon/20 rounded-lg">
+                                    <motion.div 
+                                        whileHover={{ scale: 1.1 }}
+                                        className="p-2 bg-lime-neon/20 rounded-lg group-hover:bg-lime-neon/30 transition-colors duration-300"
+                                    >
                                         <Shield className="text-lime-neon" size={20} />
-                                    </div>
+                                    </motion.div>
                                     <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.secure.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
                                     {t('mobileApp.cards.secure.desc')}
                                 </p>
-                            </div>
+                            </motion.div>
 
-                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-md p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300 hover:shadow-lg"
+                                role="region"
+                                aria-label="Multi-user feature"
+                            >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="p-2 bg-lime-neon/20 rounded-lg">
+                                    <motion.div 
+                                        whileHover={{ scale: 1.1 }}
+                                        className="p-2 bg-lime-neon/20 rounded-lg group-hover:bg-lime-neon/30 transition-colors duration-300"
+                                    >
                                         <Users className="text-lime-neon" size={20} />
-                                    </div>
+                                    </motion.div>
                                     <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.multiuser.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
                                     {t('mobileApp.cards.multiuser.desc')}
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* Download Stats */}
@@ -172,16 +216,26 @@ export function MobileApp() {
                             <div className="relative z-10 transform hover:scale-[1.02] transition-transform duration-500">
                                 <img
                                     src={mockup}
-                                    alt="Vacapp Mobile"
+                                    alt="Muusmart Mobile App - iOS and Android application interface showcase with livestock management features"
                                     className="w-full max-w-sm mx-auto object-contain drop-shadow-2xl"
                                 />
                                 
-                                <div className="absolute -left-4 top-1/4 rounded-full border border-white/60 bg-white/80 px-3 py-2 text-sm font-medium text-forest-green shadow-md">
+                                <motion.div 
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className="absolute -left-4 top-1/4 rounded-full border border-white/60 bg-white/80 px-3 py-2 text-sm font-medium text-forest-green shadow-md hover:shadow-lg transition-shadow"
+                                >
                                     {t('mobileApp.badges.new')}
-                                </div>
-                                <div className="absolute -right-4 top-2/3 rounded-full border border-forest-green/10 bg-white/82 px-3 py-2 text-sm font-medium text-forest-green shadow-md">
+                                </motion.div>
+                                <motion.div 
+                                    initial={{ opacity: 0, x: 20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.4 }}
+                                    className="absolute -right-4 top-2/3 rounded-full border border-forest-green/10 bg-white/82 px-3 py-2 text-sm font-medium text-forest-green shadow-md hover:shadow-lg transition-shadow"
+                                >
                                     {t('mobileApp.badges.free')}
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </motion.div>

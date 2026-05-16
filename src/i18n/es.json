@@ -9,7 +9,7 @@
     "hero": {
         "kicker": "Mercado premium de ganado",
         "title": "Encuentra ganado, <br /> muestra tu feria, <br /> y cierra más rápido",
-        "subtitle": "Vacapp convierte la búsqueda de ganado en una experiencia digital premium, conectando compradores y vendedores con menos fricción y más confianza.",
+        "subtitle": "Muusmart convierte la búsqueda de ganado en una experiencia digital premium, conectando compradores y vendedores con menos fricción y más confianza.",
         "primary": "Explorar la feria",
         "secondary": "Ver cómo funciona",
         "metrics": {
@@ -64,8 +64,8 @@
         }
     },
     "aboutus": {
-        "title": "Sobre Vacapp",
-        "description": "Vacapp es una plataforma moderna creada para productores, compradores y veterinarios en Perú. Nuestra misión es hacer que descubrir y gestionar ganado se sienta simple, incluso para equipos que buscan un flujo limpio e intuitivo.",
+        "title": "Sobre Muusmart",
+        "description": "Muusmart es una plataforma moderna creada para productores, compradores y veterinarios en Perú. Nuestra misión es hacer que descubrir y gestionar ganado se sienta simple, incluso para equipos que buscan un flujo limpio e intuitivo.",
         "subtitle": "Conectamos la tradición ganadera con un mercado digital más potente.",
         "imageAlt": "Productor ganadero usando Vacapp",
         "badge": "Hecho para la feria",
@@ -79,7 +79,7 @@
         },
         "values": {
             "title": "Nuestros Valores",
-            "subtitle": "Los principios que guían cada decisión en Vacapp",
+            "subtitle": "Los principios que guían cada decisión en Muusmart",
             "sustainability": {
                 "title": "Sostenibilidad",
                 "description": "Tecnología que respeta el medio ambiente y promueve prácticas ganaderas responsables."
@@ -104,7 +104,7 @@
         "subtitle": "Herramientas profesionales diseñadas específicamente para la gestión ganadera moderna",
         "cta": {
             "title": "Optimiza tu Producción Ganadera",
-            "description": "Únete a cientos de productores que ya transformaron su flujo con Vacapp. Reduce fricción, mejora la visibilidad del ganado y aumenta tu productividad.",
+            "description": "Únete a cientos de productores que ya transformaron su flujo con Muusmart. Reduce fricción, mejora la visibilidad del ganado y aumenta tu productividad.",
             "buttons": {
                 "trial": "Comenzar Prueba Gratuita",
                 "demo": "Ver Demo en Vivo"
@@ -207,7 +207,7 @@
     },
     "mobileApp": {
         "title": "Descarga nuestra app ahora",
-        "description": "Experimenta todo el poder de Vacapp en tus dispositivos Android e iOS.",
+        "description": "Experimenta todo el poder de Muusmart en tus dispositivos Android e iOS.",
         "cards": {
             "offline": { "title": "Acceso Offline", "desc": "Trabaja sin conexión y sincroniza cuando tengas internet" },
             "fast": { "title": "Rápido & Eficiente", "desc": "Interfaz optimizada para uso diario en el campo" },
@@ -233,7 +233,7 @@
     },
     "testimonials": {
         "title": "Lo que dicen nuestros usuarios",
-        "subtitle": "Más de 500 productores ya confían en Vacapp para gestionar sus operaciones",
+        "subtitle": "Más de 500 productores ya confían en Muusmart para gestionar sus operaciones",
         "stats": {
             "farms": "Granjas Activas",
             "avgRating": "Rating Promedio",
@@ -244,23 +244,23 @@
             {
                 "name": "Carlos Mendoza",
                 "role": "Ganadero - Cusco",
-                "text": "Vacapp cambió por completo cómo presento mi ganado y organizo mis ferias. Ahora controlo todo desde mi celular y cierro más rápido."
+                "text": "Muusmart cambió por completo cómo presento mi ganado y organizo mis ferias. Ahora controlo todo desde mi celular y cierro más rápido."
             },
             {
                 "name": "María Torres",
                 "role": "Veterinaria - Arequipa", 
-                "text": "Como veterinaria, Vacapp me ayuda a seguir mejor a los animales correctos y verificar los datos antes de visitar. El flujo limpio es una gran mejora."
+                "text": "Como veterinaria, Muusmart me ayuda a seguir mejor a los animales correctos y verificar los datos antes de visitar. El flujo limpio es una gran mejora."
             },
             {
                 "name": "Roberto Silva",
                 "role": "Empresa Ganadera - Lima",
-                "text": "Manejamos varias ferias y hatos con Vacapp. La sincronización en tiempo real y el flujo de descubrimiento nos ahorran horas cada semana."
+                "text": "Manejamos varias ferias y hatos con Muusmart. La sincronización en tiempo real y el flujo de descubrimiento nos ahorran horas cada semana."
             }
         ]
     },
     "callToAction": {
         "title": "¿Listo para digitalizar tu feria?",
-        "subtitle": "Únete a la revolución ganadera. Comienza hoy y transforma tu gestión con Vacapp.",
+        "subtitle": "Únete a la revolución ganadera. Comienza hoy y transforma tu gestión con Muusmart.",
         "benefits": [
             "Prueba gratuita de 30 días",
             "Sin compromisos a largo plazo",
@@ -281,7 +281,7 @@
         }
     },
     "footer": {
-        "description": "Vacapp es la plataforma SaaS completa que digitaliza el descubrimiento y la gestión ganadera. Unifica ferias, ganado, personal y campañas en una solución accesible desde web y móvil.",
+        "description": "Muusmart es la plataforma SaaS completa que digitaliza el descubrimiento y la gestión ganadera. Unifica ferias, ganado, personal y campañas en una solución accesible desde web y móvil.",
         "links": {
             "title": "Enlaces Rápidos",
             "about": "Nosotros",
@@ -297,11 +297,11 @@
             "terms": "Términos de Servicio",
             "support": "Soporte"
         },
-        "copyright": "© Vacapp. Todos los derechos reservados."
+        "copyright": "© Muusmart. Todos los derechos reservados."
     },
     "termsModal": {
         "title": "Términos y Condiciones",
-        "content": "¡Bienvenido a Vacapp! Al usar nuestro servicio, aceptas los siguientes términos y condiciones...",
+        "content": "¡Bienvenido a Muusmart! Al usar nuestro servicio, aceptas los siguientes términos y condiciones...",
         "accept": "Aceptar y Continuar"
     },
     "consent": {
@@ -322,7 +322,7 @@
         },
         "register": {
             "title": "Registrarse",
-                "subtitle": "Crea una nueva cuenta para comenzar a usar Vacapp",
+                "subtitle": "Crea una nueva cuenta para comenzar a usar Muusmart",
             "button": "Registrarse",
             "hasAccount": "¿Ya tienes una cuenta?"
         },

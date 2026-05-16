@@ -12,7 +12,7 @@ export function Hero() {
                 <img 
                     src={hero} 
                     className='h-full w-full scale-[1.1] object-cover object-[center_30%] saturate-[1.18] contrast-[1.1]' 
-                    alt="Vacapp Hero"
+                    alt="Muusmart Hero"
                 />
                 <div className="absolute inset-0 bg-[#071612]/48" />
                 <div className="absolute inset-x-0 top-0 h-52 bg-gradient-to-b from-[#071612]/96 via-[#071612]/72 to-transparent" />

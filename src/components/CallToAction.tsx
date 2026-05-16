@@ -53,7 +53,7 @@ export function CallToAction() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <button
                             onClick={() => {
-                                window.location.href = 'https://vacapp.netlify.app/register';
+                                window.location.href = 'https://muusmart.netlify.app/register';
                             }}
                             className="group bg-lime-neon text-forest-green px-8 py-4 rounded-full font-semibold text-base hover:bg-white transition-all duration-300 flex items-center gap-3"
                         >

@@ -17,7 +17,7 @@ import { getConsent, isAccepted, isRejected, setConsent } from "./utils/consent"
 // Componente para redirigir a tu app web
 function RedirectToApp({ path }: { path: string }) {
   useEffect(() => {
-    const appWebUrl = "https://vacapp.netlify.app";
+    const appWebUrl = "https://muusmart.netlify.app";
     window.location.href = `${appWebUrl}${path}`;
   }, [path]);
 
@@ -25,7 +25,7 @@ function RedirectToApp({ path }: { path: string }) {
     <div className="min-h-screen bg-gradient-to-br from-[#f5f2eb] to-[#eef3e6] flex items-center justify-center">
       <div className="text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-forest-green mx-auto"></div>
-        <p className="mt-4 text-forest-green font-mulish">Redirigiendo a Vacapp...</p>
+        <p className="mt-4 text-forest-green font-mulish">Redirigiendo a Muusmart...</p>
       </div>
     </div>
   );

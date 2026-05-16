@@ -9,7 +9,7 @@
     "hero": {
         "kicker": "Premium cattle marketplace",
         "title": "Discover cattle, <br /> showcase your fair, <br /> and close faster",
-        "subtitle": "Vacapp turns livestock search into a premium digital experience, helping buyers and sellers connect with less friction and more trust.",
+        "subtitle": "Muusmart turns livestock search into a premium digital experience, helping buyers and sellers connect with less friction and more trust.",
         "primary": "Explore the fair",
         "secondary": "See how it works",
         "metrics": {
@@ -67,8 +67,8 @@
         "button": "Get Started"
     },
     "aboutus": {
-        "title": "About Vacapp",
-        "description": "Vacapp is a modern platform created for cattle producers, buyers, and veterinarians in Peru. Our mission is to make livestock discovery and management feel effortless, even for teams that want a clean, intuitive workflow.",
+        "title": "About Muusmart",
+        "description": "Muusmart is a modern platform created for cattle producers, buyers, and veterinarians in Peru. Our mission is to make livestock discovery and management feel effortless, even for teams that want a clean, intuitive workflow.",
         "subtitle": "Connecting livestock tradition with a sharper digital marketplace.",
         "imageAlt": "Livestock producer using Vacapp",
         "badge": "Built for the fair",
@@ -82,7 +82,7 @@
         },
         "values": {
             "title": "Our Values",
-            "subtitle": "The principles that guide every decision at Vacapp",
+            "subtitle": "The principles that guide every decision at Muusmart",
             "sustainability": {
                 "title": "Sustainability",
                 "description": "Technology that respects the environment and promotes responsible livestock practices."
@@ -107,7 +107,7 @@
         "subtitle": "Professional tools designed specifically for modern livestock management",
         "cta": {
             "title": "Optimize Your Livestock Production",
-            "description": "Join hundreds of producers who already transformed their workflow with Vacapp. Reduce friction, improve herd visibility, and increase productivity.",
+            "description": "Join hundreds of producers who already transformed their workflow with Muusmart. Reduce friction, improve herd visibility, and increase productivity.",
             "buttons": {
                 "trial": "Start Free Trial",
                 "demo": "Watch Live Demo"
@@ -210,7 +210,7 @@
     },
     "mobileApp": {
         "title": "Download our app now",
-        "description": "Experience the full power of Vacapp on your Android and iOS devices.",
+        "description": "Experience the full power of Muusmart on your Android and iOS devices.",
         "cards": {
             "offline": { "title": "Offline Access", "desc": "Work without connection and sync when you have internet" },
             "fast": { "title": "Fast & Efficient", "desc": "Interface optimized for daily field use" },
@@ -236,7 +236,7 @@
     },
     "testimonials": {
         "title": "What our users say",
-        "subtitle": "Over 500 producers already trust Vacapp to manage their operations",
+        "subtitle": "Over 500 producers already trust Muusmart to manage their operations",
         "stats": {
             "farms": "Active Farms",
             "avgRating": "Average Rating",
@@ -247,23 +247,23 @@
             {
                 "name": "Carlos Mendoza",
                 "role": "Farmer - Cusco",
-                "text": "Vacapp revolutionized how I present my cattle and organize my fair listings. Now I control everything from my phone and close faster."
+                "text": "Muusmart revolutionized how I present my cattle and organize my fair listings. Now I control everything from my phone and close faster."
             },
             {
                 "name": "María Torres",
                 "role": "Veterinarian - Arequipa", 
-                "text": "As a veterinarian, Vacapp helps me track the right animals and verify details before visits. The clean flow is a huge upgrade."
+                "text": "As a veterinarian, Muusmart helps me track the right animals and verify details before visits. The clean flow is a huge upgrade."
             },
             {
                 "name": "Roberto Silva",
                 "role": "Livestock Company - Lima",
-                "text": "We manage multiple fairs and herds with Vacapp. The real-time sync and discovery flow save us hours every week."
+                "text": "We manage multiple fairs and herds with Muusmart. The real-time sync and discovery flow save us hours every week."
             }
         ]
     },
     "callToAction": {
         "title": "Ready to digitize your fair?",
-        "subtitle": "Join the livestock revolution. Start today and transform your management with Vacapp.",
+        "subtitle": "Join the livestock revolution. Start today and transform your management with Muusmart.",
         "benefits": [
             "30-day free trial",
             "No long-term commitments",
@@ -284,7 +284,7 @@
         }
     },
     "footer": {
-        "description": "Vacapp is the complete SaaS platform that digitizes livestock discovery and management. Unifies fairs, cattle, staff, and campaigns in one solution accessible from web and mobile.",
+        "description": "Muusmart is the complete SaaS platform that digitizes livestock discovery and management. Unifies fairs, cattle, staff, and campaigns in one solution accessible from web and mobile.",
         "links": {
             "title": "Quick Links",
             "about": "About Us",
@@ -300,11 +300,11 @@
             "terms": "Terms of Service",
             "support": "Support"
         },
-        "copyright": "© Vacapp. All rights reserved."
+        "copyright": "© Muusmart. All rights reserved."
     },
     "termsModal": {
         "title": "Terms and Conditions",
-        "content": "Welcome to Vacapp! By using our service, you accept the following terms and conditions...",
+        "content": "Welcome to Muusmart! By using our service, you accept the following terms and conditions...",
         "accept": "Accept and Continue"
     },
     "consent": {
@@ -325,7 +325,7 @@
         },
         "register": {
             "title": "Sign Up",
-                "subtitle": "Create a new account to start using Vacapp",
+                "subtitle": "Create a new account to start using Muusmart",
             "button": "Sign Up",
             "hasAccount": "Already have an account?"
         },

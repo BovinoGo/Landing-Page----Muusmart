@@ -111,36 +111,57 @@ function FeatureCard({
     onLeave: () => void;
 }) {
     return (
-        <div 
-            className={`group bg-white/80 backdrop-blur-sm border border-forest-green/10 rounded-3xl p-8 text-center transition-all duration-300 hover:border-lime-neon hover:shadow-xl transform hover:-translate-y-1 ${
-                isHovered ? 'shadow-2xl scale-105 border-lime-neon' : 'shadow-lg'
+        <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            whileHover={{ y: -8 }}
+            className={`group relative bg-gradient-to-br from-white to-white/80 backdrop-blur-xl border border-forest-green/15 rounded-3xl p-8 text-center transition-all duration-300 hover:border-lime-neon hover:shadow-2xl ${
+                isHovered ? 'shadow-2xl border-lime-neon' : 'shadow-lg hover:shadow-xl'
             }`}
             onMouseEnter={onHover}
             onMouseLeave={onLeave}
+            role="article"
+            aria-label={`${title}: ${description}`}
         >
+            {/* Glow effect on hover */}
+            {isHovered && (
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute inset-0 bg-gradient-to-br from-lime-neon/10 to-transparent rounded-3xl pointer-events-none"
+                />
+            )}
+            
             {/* Icon */}
-            <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-lime-neon/20 to-forest-green/20 rounded-2xl flex items-center justify-center transition-all duration-300 ${
-                isHovered ? 'scale-110 bg-gradient-to-br from-lime-neon to-forest-green' : ''
-            }`}>
+            <motion.div 
+                animate={{ scale: isHovered ? 1.15 : 1 }}
+                className={`relative z-10 w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-lime-neon/20 to-forest-green/20 rounded-2xl flex items-center justify-center transition-all duration-300 ${
+                    isHovered ? 'bg-gradient-to-br from-lime-neon to-forest-green shadow-lg' : ''
+                }`}
+            >
                 <Icon 
                     className={`w-8 h-8 transition-all duration-300 ${
                         isHovered ? 'text-white' : 'text-forest-green'
                     }`} 
+                    aria-hidden="true"
                 />
-            </div>
+            </motion.div>
             
             {/* Content */}
-            <h3 className="text-xl font-semibold mb-4 text-forest-green font-display group-hover:text-forest-green transition-colors">
+            <h3 className="relative z-10 text-xl font-semibold mb-4 text-forest-green font-display group-hover:text-forest-green transition-colors">
                 {title}
             </h3>
-            <p className="text-forest-green/70 font-mulish leading-relaxed">
+            <p className="relative z-10 text-forest-green/70 font-mulish leading-relaxed">
                 {description}
             </p>
             
             {/* Hover indicator */}
-            <div className={`mt-4 h-1 bg-gradient-to-r from-lime-neon to-forest-green rounded-full transition-all duration-300 ${
-                isHovered ? 'w-full opacity-100' : 'w-0 opacity-0'
-            }`}></div>
-        </div>
+            <motion.div 
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: isHovered ? 1 : 0 }}
+                transition={{ duration: 0.3 }}
+                className="relative z-10 mt-4 h-1 bg-gradient-to-r from-lime-neon to-forest-green rounded-full origin-left"
+            />
+        </motion.div>
     );
 }

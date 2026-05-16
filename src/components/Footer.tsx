@@ -15,8 +15,8 @@ export function Footer() {
                     <div className="lg:col-span-2 space-y-6">
                         <div className="flex items-center gap-2">
                             <div className="text-3xl font-bold font-rokkitt">
-                                <span className="text-lime-neon">Vac</span>
-                                <span>app</span>
+                                <span className="text-lime-neon">Muus</span>
+                                <span>mart</span>
                             </div>
                             <Leaf className="text-lime-neon" size={24} />
                         </div>
@@ -78,8 +78,8 @@ export function Footer() {
                         <div className="space-y-3 font-mulish">
                             <div className="flex items-center gap-3">
                                 <Mail size={16} className="text-lime-neon flex-shrink-0" />
-                                <a href="mailto:hello@vacapp.com" className="hover:text-lime-neon transition-colors">
-                                    hello@vacapp.com
+                                <a href="mailto:hello@muusmart.com" className="hover:text-lime-neon transition-colors">
+                                    hello@muusmart.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-3">

@@ -46,13 +46,13 @@ export const TermsModal = ({ onAccept, onReject }: Props) => {
 
                 <p>
                     <strong>1. Website Use:</strong><br />
-                    The content provided on <strong>Vacapp.com</strong> is for informational purposes only.
+                    The content provided on <strong>Muusmart.com</strong> is for informational purposes only.
                     You may not copy, reuse, or redistribute any part of this website without permission.
                 </p>
 
                 <p>
                     <strong>2. Intellectual Property:</strong><br />
-                    All text, logos, visuals, and design elements on the website are owned by <strong>Vacapp</strong> or its licensors.
+                    All text, logos, visuals, and design elements on the website are owned by <strong>Muusmart</strong> or its licensors.
                     Unauthorized use is strictly prohibited.
                 </p>
 
@@ -76,7 +76,7 @@ export const TermsModal = ({ onAccept, onReject }: Props) => {
                 <p>
                     <strong>6. Contact:</strong><br />
                     If you have any questions about the website or these terms, please contact us at:<br />
-                    <strong>support@vacapp.com</strong>
+                    <strong>support@muusmart.com</strong>
                 </p>
 
                 <div style={{
