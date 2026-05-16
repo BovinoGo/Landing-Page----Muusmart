@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Check, Star, Crown, Zap, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export function Prices() {
   const { t } = useTranslation()
@@ -8,46 +9,53 @@ export function Prices() {
   const [hoveredPlan, setHoveredPlan] = useState<number | null>(null);
 
   return (
-    <div className="py-16 lg:py-24 bg-gradient-to-b from-white to-light-gray" id="prices">
+    <div className="py-16 lg:py-24 bg-gradient-to-b from-[#eef3e6] to-white" id="prices">
       <div className="max-w-7xl mx-auto px-4">
         
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="font-rokkitt text-4xl md:text-6xl lg:text-7xl font-bold text-forest-green">
+        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.35 }} transition={{ duration: 0.55 }} className="text-center mb-16 space-y-4">
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold text-forest-green">
             {t('prices.title')}
           </h2>
           <p className="text-lg md:text-xl text-forest-green/70 font-mulish max-w-2xl mx-auto">
             {t('prices.subtitle')}
           </p>
-        </div>
+        </motion.div>
 
         {/* Plans Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <PriceCard 
-              key={index} 
-              plan={plan} 
-              index={index}
-              isHovered={hoveredPlan === index}
-              onHover={() => setHoveredPlan(index)}
-              onLeave={() => setHoveredPlan(null)}
-            />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <PriceCard 
+                plan={plan} 
+                index={index}
+                isHovered={hoveredPlan === index}
+                onHover={() => setHoveredPlan(index)}
+                onLeave={() => setHoveredPlan(null)}
+              />
+            </motion.div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 p-8 bg-forest-green/5 rounded-2xl border border-forest-green/10">
-          <h3 className="text-2xl font-bold text-forest-green mb-4 font-rokkitt">
+        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }} className="text-center mt-16 p-8 bg-forest-green/5 rounded-3xl border border-forest-green/10">
+          <h3 className="text-2xl font-semibold text-forest-green mb-4 font-display">
             {t('prices.customTitle')}
           </h3>
           <p className="text-forest-green/70 mb-6 font-mulish">
             {t('prices.customDesc')}
           </p>
-          <button onClick={() => { window.location.href = 'https://muusmartty.netlify.app/login'; }} className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
+          <button onClick={() => { window.location.href = 'https://vacapp.netlify.app/login'; }} className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
             {t('prices.cta.enterprise')}
             <ArrowRight size={16} />
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
@@ -72,7 +80,7 @@ function PriceCard({
   
   return (
     <div 
-      className={`relative p-8 rounded-2xl border transition-all duration-300 transform hover:scale-105 ${
+      className={`relative p-8 rounded-3xl border transition-all duration-300 transform hover:-translate-y-1 ${
         isPopular 
           ? 'bg-forest-green text-white border-forest-green shadow-2xl' 
           : 'bg-white text-forest-green border-forest-green/20 hover:border-lime-neon shadow-lg hover:shadow-xl'
@@ -102,7 +110,7 @@ function PriceCard({
 
       {/* Plan Header */}
       <div className="mb-8">
-        <h3 className="text-2xl font-bold mb-2 font-rokkitt">{plan.name}</h3>
+        <h3 className="text-2xl font-semibold mb-2 font-display">{plan.name}</h3>
         <div className="mb-4">
           <span className="text-4xl font-bold">{plan.price}</span>
           {plan.price !== "Gratis" && plan.price !== "免费" && plan.price !== "Free" && (
@@ -143,10 +151,10 @@ function PriceCard({
         onClick={() => {
           if (index === 2) {
             // Enterprise -> login (contact sales)
-            window.location.href = 'https://muusmartty.netlify.app/login';
+            window.location.href = 'https://vacapp.netlify.app/login';
           } else {
             // Starter/Premium -> register
-            window.location.href = 'https://muusmartty.netlify.app/register';
+            window.location.href = 'https://vacapp.netlify.app/register';
           }
         }}
       >

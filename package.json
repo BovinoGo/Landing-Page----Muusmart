@@ -1,5 +1,5 @@
 {
-  "name": "Muusmart",
+  "name": "vacapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.1.5",
     "i18next": "^25.1.2",
     "lucide-react": "^0.508.0",
+    "motion": "^12.38.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.5.1",

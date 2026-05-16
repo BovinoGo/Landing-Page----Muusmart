@@ -1,6 +1,7 @@
 import { CalendarCheck, ChartColumn, ClipboardList, ClipboardPlus, Package, Syringe, ArrowRight, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const iconList = [ClipboardList, Syringe, CalendarCheck, ChartColumn, ClipboardPlus, Package]
 
@@ -10,36 +11,43 @@ export function Features() {
     const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
 
     return (
-        <section className="py-20 bg-gradient-to-b from-light-gray to-white" id="features">
+        <section className="py-20 bg-gradient-to-b from-white to-[#eef3e6]" id="features">
             <div className="max-w-7xl mx-auto px-4">
                 
                 {/* Header */}
-                <div className="text-center mb-16 space-y-4">
-                    <h2 className="font-rokkitt text-4xl md:text-5xl lg:text-6xl font-bold text-forest-green">
+                <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.35 }} transition={{ duration: 0.55 }} className="text-center mb-16 space-y-4">
+                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-forest-green">
                         {t('features.title')}
                     </h2>
                     <p className="text-lg md:text-xl text-forest-green/70 font-mulish max-w-3xl mx-auto">
                         {t('features.subtitle')}
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {featureList.map((feature, index) => (
-                        <FeatureCard 
+                        <motion.div
                             key={index}
-                            Icon={iconList[index]} 
-                            title={feature.title} 
-                            description={feature.description}
-                            isHovered={hoveredFeature === index}
-                            onHover={() => setHoveredFeature(index)}
-                            onLeave={() => setHoveredFeature(null)}
-                        />
+                            initial={{ opacity: 0, y: 18 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, delay: index * 0.05 }}
+                        >
+                            <FeatureCard 
+                                Icon={iconList[index]} 
+                                title={feature.title} 
+                                description={feature.description}
+                                isHovered={hoveredFeature === index}
+                                onHover={() => setHoveredFeature(index)}
+                                onLeave={() => setHoveredFeature(null)}
+                            />
+                        </motion.div>
                     ))}
                 </div>
 
                 {/* Bottom CTA Section */}
-                <div className="bg-forest-green rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+                <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }} className="bg-forest-green rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
                     {/* Background decoration */}
                     <div className="absolute top-0 right-0 w-32 h-32 bg-lime-neon/20 rounded-full blur-3xl"></div>
                     <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
@@ -47,7 +55,7 @@ export function Features() {
                     <div className="relative z-10 space-y-6">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <TrendingUp className="text-lime-neon" size={32} />
-                            <h3 className="text-2xl md:text-3xl font-bold font-rokkitt">
+                            <h3 className="text-2xl md:text-3xl font-semibold font-display">
                                 {t('features.cta.title')}
                             </h3>
                         </div>
@@ -81,7 +89,7 @@ export function Features() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
@@ -104,7 +112,7 @@ function FeatureCard({
 }) {
     return (
         <div 
-            className={`group bg-white border border-forest-green/10 rounded-2xl p-8 text-center transition-all duration-300 hover:border-lime-neon hover:shadow-xl transform hover:scale-105 ${
+            className={`group bg-white/80 backdrop-blur-sm border border-forest-green/10 rounded-3xl p-8 text-center transition-all duration-300 hover:border-lime-neon hover:shadow-xl transform hover:-translate-y-1 ${
                 isHovered ? 'shadow-2xl scale-105 border-lime-neon' : 'shadow-lg'
             }`}
             onMouseEnter={onHover}
@@ -122,7 +130,7 @@ function FeatureCard({
             </div>
             
             {/* Content */}
-            <h3 className="text-xl font-bold mb-4 text-forest-green font-rokkitt group-hover:text-forest-green transition-colors">
+            <h3 className="text-xl font-semibold mb-4 text-forest-green font-display group-hover:text-forest-green transition-colors">
                 {title}
             </h3>
             <p className="text-forest-green/70 font-mulish leading-relaxed">

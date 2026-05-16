@@ -1,38 +1,51 @@
 import mockup from "../assets/mobile_app.webp"
 import { useTranslation } from "react-i18next";
 import { Smartphone, Download, Star, Users, Shield, Zap, Apple, Play } from "lucide-react";
+import { motion } from "motion/react";
 
 export function MobileApp() {
     const { t } = useTranslation();
 
     return (
-        <section className="py-20 bg-gradient-to-b from-white to-light-gray overflow-hidden" id="app">
+        <section className="py-20 bg-gradient-to-b from-[#f5f2eb] to-[#eef3e6] overflow-hidden" id="app">
             {/* anchor alias for smooth scroll */}
             <div id="mobile-app" className="sr-only" />
             <div className="max-w-7xl mx-auto px-4">
                 
                 {/* Header */}
-                <div className="text-center mb-16 space-y-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{ duration: 0.55 }}
+                    className="text-center mb-16 space-y-4"
+                >
                     <div className="flex items-center justify-center gap-3 mb-4">
                         <Smartphone className="text-lime-neon" size={32} />
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-rokkitt text-forest-green">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-display text-forest-green">
                             {t('mobileApp.title')}
                         </h2>
                     </div>
-                    <p className="text-lg md:text-xl text-forest-green/70 font-mulish max-w-3xl mx-auto">
+                    <p className="text-base md:text-lg text-forest-green/68 font-mulish max-w-3xl mx-auto">
                         {t('mobileApp.description')}
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Main Content */}
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 items-center">
                     
                     {/* Left Side - App Info */}
-                    <div className="space-y-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 24 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.6, delay: 0.05 }}
+                        className="space-y-8"
+                    >
                         
                         {/* App Features */}
-                        <div className="grid sm:grid-cols-2 gap-6">
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-forest-green/10 hover:border-lime-neon/50 transition-all duration-300 hover:transform hover:scale-105">
+                        <div className="grid sm:grid-cols-2 gap-5">
+                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Download className="text-lime-neon" size={20} />
@@ -44,7 +57,7 @@ export function MobileApp() {
                                 </p>
                             </div>
 
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-forest-green/10 hover:border-lime-neon/50 transition-all duration-300 hover:transform hover:scale-105">
+                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Zap className="text-lime-neon" size={20} />
@@ -56,7 +69,7 @@ export function MobileApp() {
                                 </p>
                             </div>
 
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-forest-green/10 hover:border-lime-neon/50 transition-all duration-300 hover:transform hover:scale-105">
+                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Shield className="text-lime-neon" size={20} />
@@ -68,7 +81,7 @@ export function MobileApp() {
                                 </p>
                             </div>
 
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-forest-green/10 hover:border-lime-neon/50 transition-all duration-300 hover:transform hover:scale-105">
+                            <div className="bg-white/70 backdrop-blur-sm p-6 rounded-3xl border border-forest-green/8 hover:border-lime-neon/40 transition-all duration-300">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Users className="text-lime-neon" size={20} />
@@ -82,7 +95,7 @@ export function MobileApp() {
                         </div>
 
                         {/* Download Stats */}
-                        <div className="bg-forest-green/5 rounded-2xl p-6 border border-forest-green/10">
+                        <div className="bg-white/60 rounded-3xl p-6 border border-forest-green/8">
                             <div className="grid grid-cols-3 gap-6 text-center">
                                 <div>
                                     <div className="flex items-center justify-center gap-1 mb-1">
@@ -107,7 +120,7 @@ export function MobileApp() {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a 
                                     href="#" 
-                                    className="group flex-1 bg-black text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green transition-all duration-300 transform hover:scale-105"
+                                    className="group flex-1 bg-forest-green text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green/90 transition-all duration-300"
                                     aria-label="Download on the App Store"
                                 >
                                     <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
@@ -121,7 +134,7 @@ export function MobileApp() {
                                 
                                 <a 
                                     href="#" 
-                                    className="group flex-1 bg-black text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green transition-all duration-300 transform hover:scale-105"
+                                    className="group flex-1 bg-forest-green text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green/90 transition-all duration-300"
                                     aria-label="Get it on Google Play"
                                 >
                                     <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
@@ -140,33 +153,38 @@ export function MobileApp() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Right Side - Phone Mockup */}
-                    <div className="relative flex justify-center lg:justify-end">
+                    <motion.div
+                        initial={{ opacity: 0, y: 24, scale: 0.98 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.7, delay: 0.08 }}
+                        className="relative flex justify-center lg:justify-end"
+                    >
                         <div className="relative">
                             {/* Decorative elements */}
-                            <div className="absolute -top-8 -right-8 w-32 h-32 bg-lime-neon/20 rounded-full blur-3xl"></div>
-                            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-forest-green/20 rounded-full blur-2xl"></div>
+                            <div className="absolute -top-8 -right-8 w-32 h-32 bg-lime-neon/14 rounded-full blur-3xl"></div>
+                            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-forest-green/12 rounded-full blur-2xl"></div>
                             
                             {/* Phone mockup */}
-                            <div className="relative z-10 transform hover:scale-105 transition-transform duration-500">
+                            <div className="relative z-10 transform hover:scale-[1.02] transition-transform duration-500">
                                 <img
                                     src={mockup}
-                                    alt="Muusmart Mobile"
+                                    alt="Vacapp Mobile"
                                     className="w-full max-w-sm mx-auto object-contain drop-shadow-2xl"
                                 />
                                 
-                                {/* Floating badges */}
-                                <div className="absolute -left-4 top-1/4 bg-lime-neon text-forest-green px-3 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
-                                    ✨ {t('mobileApp.badges.new')}
+                                <div className="absolute -left-4 top-1/4 rounded-full border border-white/60 bg-white/80 px-3 py-2 text-sm font-medium text-forest-green shadow-md">
+                                    {t('mobileApp.badges.new')}
                                 </div>
-                                <div className="absolute -right-4 top-2/3 bg-forest-green text-white px-3 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
-                                    🚀 {t('mobileApp.badges.free')}
+                                <div className="absolute -right-4 top-2/3 rounded-full border border-forest-green/10 bg-white/82 px-3 py-2 text-sm font-medium text-forest-green shadow-md">
+                                    {t('mobileApp.badges.free')}
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

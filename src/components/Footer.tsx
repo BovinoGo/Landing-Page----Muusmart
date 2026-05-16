@@ -11,12 +11,12 @@ export function Footer() {
             <div className="max-w-6xl mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                    {/* Muusmart Info */}
+                    {/* Vacapp Info */}
                     <div className="lg:col-span-2 space-y-6">
                         <div className="flex items-center gap-2">
                             <div className="text-3xl font-bold font-rokkitt">
-                                <span className="text-lime-neon">Muus</span>
-                                <span>mart</span>
+                                <span className="text-lime-neon">Vac</span>
+                                <span>app</span>
                             </div>
                             <Leaf className="text-lime-neon" size={24} />
                         </div>
@@ -78,8 +78,8 @@ export function Footer() {
                         <div className="space-y-3 font-mulish">
                             <div className="flex items-center gap-3">
                                 <Mail size={16} className="text-lime-neon flex-shrink-0" />
-                                <a href="mailto:contacto@Muusmart.com" className="hover:text-lime-neon transition-colors">
-                                    contacto@Muusmart.com
+                                <a href="mailto:hello@vacapp.com" className="hover:text-lime-neon transition-colors">
+                                    hello@vacapp.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-3">
@@ -110,7 +110,7 @@ export function Footer() {
                         <span className="text-sm font-mulish text-white/70">Síguenos:</span>
                         <div className="flex gap-3">
                             <a 
-                                href="https://github.com/MuuSmart" 
+                                href="https://github.com/" 
                                 className="p-2 bg-white/10 rounded-full hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-110"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -160,9 +160,9 @@ export function Footer() {
             <div className="bg-forest-green/50 py-3 border-t border-white/10">
                 <div className="max-w-6xl mx-auto px-4 text-center">
                     <p className="text-xs font-mulish text-white/60">
-                        🌿 Conectamos tradición ganadera con soluciones tecnológicas • 
+                        Conectamos tradición ganadera con soluciones tecnológicas • 
                         Desarrollado con React + Flutter • 
-                        Cloud ☁️ + Móvil 📱
+                        Cloud + Móvil
                     </p>
                 </div>
             </div>

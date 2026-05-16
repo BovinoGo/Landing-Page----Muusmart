@@ -1,31 +1,85 @@
 {
     "navbar": {
-        "about": "关于我们",
+        "about": "关于",
+        "fair": "市集",
         "features": "功能特色",
         "prices": "价格",
-        "getapp": "下载应用"
+        "getapp": "App"
     },
     "hero": {
-        "title": "用科技革命<br />农业<br />",
-        "button": "开始使用"
+        "kicker": "高端牛只交易市场",
+        "title": "发现牛只，<br />展示你的市集，<br />并更快成交",
+        "subtitle": "Vacapp 将牛只搜索变成高端数字体验，帮助买家和卖家以更少阻力、更高信任连接起来。",
+        "primary": "探索市集",
+        "secondary": "了解流程",
+        "metrics": {
+            "match": "更精准的线索",
+            "fair": "全天可见",
+            "trust": "已验证资料"
+        },
+        "panel": {
+            "title": "实时搜索面板",
+            "search": "按意图搜索牛只",
+            "searchText": "可先按品种、年龄、体重、位置和市集类别筛选，再发送消息。",
+            "listing": "平均发布时间",
+            "listingValue": "5 分钟",
+            "response": "买家响应",
+            "responseValue": "24 小时内"
+        }
+    },
+    "fair": {
+        "tag": "新的牛只市集专区",
+        "title": "用专为真实交易打造的市集，更快找到合适的牛只",
+        "subtitle": "发布标的、突出可用牛只，并用更清晰、更高级的体验引导买家找到正确的牛群。",
+        "cards": {
+            "search": {
+                "title": "按价值搜索",
+                "description": "按品种、类别和位置筛选牛只，让买家更快找到匹配对象。"
+            },
+            "location": {
+                "title": "地图定位市集",
+                "description": "以清晰地图展示附近市集和卖家，帮助用户发现周边机会。"
+            },
+            "verification": {
+                "title": "已验证列表",
+                "description": "突出可信资料和已验证标的，让每次对话更安全、更正式。"
+            }
+        },
+        "primaryCta": "立即搜索牛只",
+        "secondaryCta": "了解体验",
+        "panel": {
+            "title": "精选标的",
+            "featuredLabel": "重点匹配",
+            "featuredTitle": "可立即发布的布朗格斯小母牛",
+            "badge": "已验证",
+            "stats": [
+                { "value": "18", "label": "可用标的" },
+                { "value": "92%", "label": "匹配率" },
+                { "value": "4.9", "label": "卖家评分" }
+            ],
+            "community": "活跃社区",
+            "communityText": "农民、买家和兽医在同一个精致空间里分享机会。",
+            "map": "地理发现",
+            "mapText": "让用户在不失高级感的前提下浏览本地区附近的市集和牛只。"
+        }
     },
     "aboutus": {
-        "title": "关于我们",
-        "description": "Muusmart是一款专为秘鲁牲畜饲养者和兽医创建的移动应用。我们的使命是通过一个易于使用的平台促进牲畜管理，即使是没有技术经验的人也能轻松使用。从动物登记到报告生成，Muusmart是为您量身定制的。",
-        "subtitle": "我们将传统畜牧业与技术解决方案相连接。",
-        "imageAlt": "使用Muusmart的农牧民",
-        "badge": "科技走进田间",
+        "title": "关于 Vacapp",
+        "description": "Vacapp 是为秘鲁的牛只生产者、买家和兽医打造的现代平台。我们的使命是让发现和管理牛只变得轻松，即使是追求简洁直观流程的团队也能快速上手。",
+        "subtitle": "我们将传统畜牧业与更强的数字化市集连接起来。",
+        "imageAlt": "使用 Vacapp 的牧场主",
+        "badge": "为市集而生",
         "mission": {
             "title": "我们的使命",
-            "description": "让畜牧技术更大众化，使各类规模的生产者都能使用专业工具。"
+            "description": "让畜牧技术和市集发现更大众化，使各类规模的生产者都能使用专业工具。"
         },
         "vision": {
             "title": "我们的愿景",
-            "description": "成为拉丁美洲领先的畜牧管理平台，推动行业的可持续性与生产力。"
+            "description": "成为拉丁美洲领先的牛只发现与管理平台，推动信任、可持续性与生产力。"
         },
         "values": {
             "title": "我们的价值观",
-            "subtitle": "引导 Muusmart 每个决策的原则",
+            "subtitle": "引导 Vacapp 每个决策的原则",
             "sustainability": {
                 "title": "可持续性",
                 "description": "尊重环境并推动负责任的牧业实践的技术。"
@@ -50,7 +104,7 @@
         "subtitle": "专为现代牲畜管理设计的专业工具",
         "cta": {
             "title": "优化您的牲畜生产",
-            "description": "加入数百位已经用Muusmart改变管理方式的农民。降低成本，改善牛群健康，提高生产力。",
+            "description": "加入数百位已经用 Vacapp 改变工作流的生产者。减少阻力，提升牛只可见性，并提高生产力。",
             "buttons": {
                 "trial": "开始免费试用",
                 "demo": "观看实时演示"
@@ -153,7 +207,7 @@
     },
     "mobileApp": {
         "title": "立即下载我们的应用",
-        "description": "在Android和iOS设备上体验Muusmart的全部功能。",
+        "description": "在 Android 和 iOS 设备上体验 Vacapp 的全部功能。",
         "cards": {
             "offline": { "title": "离线访问", "desc": "无网络也可使用，联网后自动同步" },
             "fast": { "title": "快速高效", "desc": "为日常田间使用优化的界面" },
@@ -179,7 +233,7 @@
     },
     "testimonials": {
         "title": "用户评价",
-        "subtitle": "已有500多名农民信任Muusmart管理他们的运营",
+        "subtitle": "已有 500 多位生产者信任 Vacapp 管理他们的运营",
         "stats": {
             "farms": "活跃农场",
             "avgRating": "平均评分",
@@ -190,23 +244,23 @@
             {
                 "name": "卡洛斯·门多萨",
                 "role": "牧场主 - 库斯科",
-                "text": "Muusmart彻底改变了我的牲畜管理。现在我用手机控制200头牛，死亡率降低了30%。"
+                "text": "Vacapp 彻底改变了我展示牛只和管理市集列表的方式。现在我用手机就能掌控一切，并更快达成交易。"
             },
             {
                 "name": "玛丽亚·托雷斯",
                 "role": "兽医 - 阿雷基帕",
-                "text": "作为兽医，Muusmart让我能更好地跟踪我的患者。自动报告功能非常棒。"
+                "text": "作为兽医，Vacapp 帮助我更好地跟踪正确的动物，并在拜访前核对信息。流畅体验是很大的升级。"
             },
             {
                 "name": "罗伯托·席尔瓦", 
                 "role": "畜牧公司 - 利马",
-                "text": "我们用Muusmart管理5个农场。实时同步和库存控制为我们节省了大量日常工作时间。"
+                "text": "我们用 Vacapp 管理多个市集和牛群。实时同步和发现流程每周帮我们节省大量时间。"
             }
         ]
     },
     "callToAction": {
-        "title": "准备好数字化您的牧场了吗？",
-        "subtitle": "加入畜牧业革命。立即开始，用Muusmart转变您的管理方式。",
+        "title": "准备好数字化您的市集了吗？",
+        "subtitle": "加入畜牧业革命。立即开始，用 Vacapp 改变您的管理方式。",
         "benefits": [
             "30天免费试用",
             "无长期承诺",
@@ -227,7 +281,7 @@
         }
     },
     "footer": {
-        "description": "Muusmart是完整的SaaS平台，数字化畜牧管理。统一牧场管理、牛群、员工和活动在一个可从网页和移动端访问的解决方案中。",
+        "description": "Vacapp 是完整的 SaaS 平台，帮助数字化牛只发现和管理。将市集、牛群、员工和活动统一在一个可从网页和移动端访问的解决方案中。",
         "links": {
             "title": "快速链接",
             "about": "关于我们",
@@ -243,11 +297,11 @@
             "terms": "服务条款",
             "support": "技术支持"
         },
-        "copyright": "© Muusmart. 保留所有权利。"
+        "copyright": "© Vacapp. 保留所有权利。"
     },
     "termsModal": {
         "title": "条款和条件",
-        "content": "欢迎使用Muusmart！通过使用我们的服务，您同意以下条款和条件...",
+        "content": "欢迎使用 Vacapp！通过使用我们的服务，您同意以下条款和条件...",
         "accept": "接受并继续"
     },
     "consent": {
@@ -268,7 +322,7 @@
         },
         "register": {
             "title": "注册",
-            "subtitle": "创建新账户开始使用Muusmart",
+                "subtitle": "创建新账户开始使用 Vacapp",
             "button": "注册",
             "hasAccount": "已有账户？"
         },
@@ -278,6 +332,9 @@
         "name": "姓名",
         "forgotPassword": "忘记密码？",
         "or": "或",
-        "backToHome": "返回首页"
+        "backToHome": "返回首页",
+        "menu": {
+            "title": "入口"
+        }
     }
 }

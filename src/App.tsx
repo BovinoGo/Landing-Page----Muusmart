@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
+import { FairSection } from "./components/FairSection";
 import { AboutUs } from "./components/AboutUs";
-import { Features } from './components/Features';
-import { Testimonials } from './components/Testimonials';
-import { Prices } from './components/Prices';
+import { Features } from "./components/Features";
+import { Prices } from "./components/Prices";
 import { MobileApp } from "./components/MobileApp";
 import { CallToAction } from "./components/CallToAction";
 import { Footer } from "./components/Footer";
@@ -17,16 +17,15 @@ import { getConsent, isAccepted, isRejected, setConsent } from "./utils/consent"
 // Componente para redirigir a tu app web
 function RedirectToApp({ path }: { path: string }) {
   useEffect(() => {
-    // Cambia esta URL por la URL de tu app web
-    const appWebUrl = "https://muusmartty.netlify.app/login"; // 🚨 CAMBIA ESTA URL
+    const appWebUrl = "https://vacapp.netlify.app";
     window.location.href = `${appWebUrl}${path}`;
   }, [path]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-light-gray to-pale-lime flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-[#f5f2eb] to-[#eef3e6] flex items-center justify-center">
       <div className="text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-forest-green mx-auto"></div>
-        <p className="mt-4 text-forest-green font-mulish">Redirigiendo a Muusmart...</p>
+        <p className="mt-4 text-forest-green font-mulish">Redirigiendo a Vacapp...</p>
       </div>
     </div>
   );
@@ -36,9 +35,9 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <FairSection />
       <AboutUs />
       <Features />
-      <Testimonials />
       <Prices />
       <MobileApp />
       <CallToAction />
@@ -83,7 +82,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-b from-white to-light-gray">
+      <div className="min-h-screen bg-gradient-to-b from-[#f5f2eb] to-[#eef3e6]">
         <Routes>
           <Route path="/" element={
             <>

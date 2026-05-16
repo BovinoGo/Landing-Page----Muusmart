@@ -5,13 +5,12 @@ import { ChevronDown, Globe } from 'lucide-react';
 interface Language {
   code: string;
   name: string;
-  flag: string;
 }
 
 const languages: Language[] = [
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' }
+  { code: 'es', name: 'Español' },
+  { code: 'en', name: 'English' },
+  { code: 'zh', name: '中文' }
 ];
 
 export function LanguageSelector() {
@@ -34,7 +33,7 @@ export function LanguageSelector() {
       >
         <Globe className="text-forest-green group-hover:text-lime-neon transition-colors" size={18} />
         <span className="text-forest-green group-hover:text-lime-neon font-medium text-sm">
-          {currentLanguage.flag} {currentLanguage.name}
+          {currentLanguage.name}
         </span>
         <ChevronDown 
           className={`text-forest-green group-hover:text-lime-neon transition-all duration-300 ${
@@ -65,7 +64,6 @@ export function LanguageSelector() {
                     : 'text-forest-green/80 hover:text-forest-green'
                 }`}
               >
-                <span className="text-lg">{language.flag}</span>
                 <span className="font-mulish">{language.name}</span>
                 {currentLanguage.code === language.code && (
                   <div className="ml-auto w-2 h-2 bg-lime-neon rounded-full" />
