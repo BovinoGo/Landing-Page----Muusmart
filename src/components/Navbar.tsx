@@ -3,7 +3,7 @@ import Drawer from '@mui/material/Drawer';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
-import { ChevronDown, LogIn, UserPlus } from 'lucide-react';
+import { ChevronDown, Store, UserPlus } from 'lucide-react';
 import { LanguageSelector } from './LanguageSelector';
 
 export function Navbar() {
@@ -48,14 +48,14 @@ export function Navbar() {
                             />
                             <div className="absolute right-0 top-full z-50 mt-2 w-56 overflow-hidden rounded-2xl border border-forest-green/10 bg-[#f8f6ef]/95 p-2 shadow-[0_18px_40px_rgba(23,55,47,0.12)] backdrop-blur-xl">
                                 <a
-                                    href="https://muusmart.netlify.app/login"
+                                    href="https://marketplacemuusmart.netlify.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium text-forest-green transition-colors hover:bg-lime-neon/10 hover:text-lime-neon"
+                                    className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold text-white bg-forest-green transition-all duration-300 hover:bg-lime-neon hover:text-forest-green"
                                     onClick={() => setAuthOpen(false)}
                                 >
-                                    <LogIn size={15} />
-                                    {t('auth.login.title')}
+                                    <Store size={15} />
+                                    Marketplace
                                 </a>
                                 <a
                                     href="https://muusmart.netlify.app/register"
@@ -129,15 +129,15 @@ function Sidebar() {
                         </button>
                         {authOpen && (
                             <div className="space-y-2 rounded-2xl border border-forest-green/10 bg-white/70 p-2 backdrop-blur-sm">
-                                <a 
-                                    href="https://vacapp.netlify.app/login"
+                                <a
+                                    href="https://marketplacemuusmart.netlify.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-forest-green hover:bg-lime-neon/10 hover:text-lime-neon transition-all duration-300"
+                                    className="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-semibold text-white bg-forest-green hover:bg-lime-neon hover:text-forest-green transition-all duration-300"
                                     onClick={() => setOpen(false)}
                                 >
-                                    <LogIn size={18} />
-                                    {t('auth.login.title')}
+                                    <Store size={18} />
+                                    Marketplace
                                 </a>
                                 <a 
                                     href="https://vacapp.netlify.app/register"
